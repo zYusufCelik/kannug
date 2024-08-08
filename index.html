@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazı Tura Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yazı Tura Oyunu</h1>
+        <div class="scoreboard">
+            <div class="score">
+                <p>Yazı: <span id="heads-count">0</span></p>
+            </div>
+            <div class="score">
+                <p>Tura: <span id="tails-count">0</span></p>
+            </div>
+        </div>
+        <div class="coin" id="coin">
+            <img id="coin-image" src="images1/1TL_yazi.png" alt="Yazı Tura">
+        </div>
+        <div class="buttons">
+            <button id="flip-button">Döndür</button>
+            <button id="reset-button">Sıfırla</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
