@@ -15,17 +15,17 @@ document.getElementById('flip-button').addEventListener('click', function () {
         if (random < 0.5) {
             headsCount++;
             headsCountDisplay.textContent = headsCount;
-            coinImage.src = 'images1/1TL_yazi.png'; // Yazı görselinin yolu
+            coinImage.src = 'images1/1TL_yazi.png';
             resultDisplay.textContent = "Yazı Geldi!";
         } else {
             tailsCount++;
             tailsCountDisplay.textContent = tailsCount;
-            coinImage.src = 'images1/1TL_tura.png'; // Tura görselinin yolu
+            coinImage.src = 'images1/1TL_tura.png';
             resultDisplay.textContent = "Tura Geldi!";
         }
 
         coin.classList.remove('flipping');
-    }, 1000); // Animasyon süresi
+    }, 1000);
 });
 
 document.getElementById('reset-button').addEventListener('click', function () {
@@ -34,5 +34,5 @@ document.getElementById('reset-button').addEventListener('click', function () {
     headsCountDisplay.textContent = headsCount;
     tailsCountDisplay.textContent = tailsCount;
     resultDisplay.textContent = "";
-    coinImage.src = 'images1/1TL_yazi.png'; // Varsayılan olarak Yazı görseli
+    coinImage.src = 'images1/1TL_yazi.png';
 });
