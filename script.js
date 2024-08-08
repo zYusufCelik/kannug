@@ -1,3 +1,12 @@
+window.onload = function () {
+    const welcomeMessage = document.getElementById("welcome-message");
+    welcomeMessage.style.display = "block";
+
+    setTimeout(function () {
+        welcomeMessage.style.display = "none";
+    }, 3000);
+};
+
 let headsCount = 0;
 let tailsCount = 0;
 
